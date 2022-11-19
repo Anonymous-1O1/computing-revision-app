@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Computing Revision App</title>
+    </head>
+    <body>
+        <h1>{{item}}</h1>
+        <button onclick="output()">Reveal Answer</button>
+        <h2 id="answer">Answer: </h2>
+    </body>
+    <a href http://127.0.0.1:80>
+        <button>Next Question</button>
+    </a>
+    <script>
+        function output(){
+            document.getElementById("answer").innerHTML="Answer: {{description}}";
+        }
+    </script>
+</html>
